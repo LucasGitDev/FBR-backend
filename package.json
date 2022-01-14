@@ -33,6 +33,7 @@
     "luxon": "^2.3.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.21"
