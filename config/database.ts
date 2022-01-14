@@ -24,13 +24,13 @@ const databaseConfig: DatabaseConfig = {
   connections: {
     /*
     |--------------------------------------------------------------------------
-    | MySQL config
+    | PostgreSQL config
     |--------------------------------------------------------------------------
     |
-    | Configuration for MySQL database. Make sure to install the driver
+    | Configuration for PostgreSQL database. Make sure to install the driver
     | from npm when using this connection
     |
-    | npm i mysql
+    | npm i pg
     |
     */
     pg: {
@@ -48,7 +48,8 @@ const databaseConfig: DatabaseConfig = {
       healthCheck: false,
       debug: false,
     },
-  },
+
+  }
 }
 
 export default databaseConfig
