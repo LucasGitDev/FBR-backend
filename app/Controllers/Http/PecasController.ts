@@ -43,11 +43,11 @@ export default class PecasController {
     const { search } = await request.get()
 
     const pecas = await Peca.query()
-      .where('nome', 'like', `%${search}%`)
-      .orWhere('descricao', 'like', `%${search}%`)
-      .orWhere('codigo', 'like', `%${search}%`)
-      .orWhere('localizacao', 'like', `%${search}%`)
-      .orWhere('tipo', 'like', `%${search}%`)
+      .where('nome', 'ilike', `%${search}%`)
+      .orWhere('descricao', 'ilike', `%${search}%`)
+      .orWhere('codigo', 'ilike', `%${search}%`)
+      .orWhere('localizacao', 'ilike', `%${search}%`)
+      .orWhere('tipo', 'ilike', `%${search}%`)
 
     return pecas
   }
