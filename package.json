@@ -2,6 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "serve:dev": "nodemon --watch app/**/*.* --watch start/**/*.* --watch config/**/*.* --watch resources/**/*.* --watch public/**/*.* --watch .env -x node server.js",
     "dev": "node ace serve --watch",
